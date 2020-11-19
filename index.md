@@ -19,5 +19,8 @@
 
 - [Поиск и замена в файлах](useful/find-replace-in-files.md)
 - [How to Style Images With Markdown](https://www.xaprb.com/blog/how-to-style-images-with-markdown/)
-- [OnTheWire Bandit Linux Labs](otw/index.md)
+
+## Linux Training
+
+- [OverTheWire Bandit Linux Labs](otw/index.md)
 --- 
