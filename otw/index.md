@@ -4,6 +4,15 @@
 
 > [`<<`](../index.md)
 
+## Level7
+
+The password for the next level is stored in the file `data.txt` next to the word **millionth**.
+
+```
+$ grep -i millionth data.txt
+  millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+```
+
 ## Level6
 
 The password for the next level is stored **somewhere on THE server** and has all of the following properties:
