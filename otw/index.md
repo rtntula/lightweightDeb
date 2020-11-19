@@ -1,6 +1,6 @@
-![](../img/otw01.png)
+![](../img/otw01.png)|<span style="color: brown; font-family: Times; font-size: 32px;">OverTheWire Bandit Linux Labs</span>
+ --- | --- 
 
-# OverTheWire Bandit Linux Labs
 
 > [`<<`](../index.md)
 
