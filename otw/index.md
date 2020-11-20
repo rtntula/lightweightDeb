@@ -4,6 +4,69 @@
 
 > [`<<`](../index.md)
 
+## Level11
+
+The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions.
+
+```
+$ cat data.txt
+  Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh
+$ cat data.txt | tr a-zA-Z n-za-mN-ZA-M
+  The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+```
+
+Rotated by 13 positions: a->n, b->o ... z->m.
+
+## Level10
+
+The password for the next level is stored in the file `data.txt`, which contains **base64** encoded data
+
+```
+$ cat data.txt
+  VGhlIHBhc3N3b3JkIGlzIElGdWt3S0dzRlc4TU9xM0lSRnFyeEUxaHhUTkViVVBSCg==
+$ base64 -di data.txt
+  The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+```
+
+Утилита `base64` кодирует или декодирует Файл или стандартный ввод на стандартный
+вывод в/из base64.
+
+## Level9
+
+The password for the next level is stored in the file `data.txt` in one of the few human-readable strings, preceded by several ‘**=**’ characters.
+
+```
+$ file data.txt
+  data.txt: data
+$ strings data.txt |grep -E '= ' --color
+  ========== the*2i"4
+  ========== password
+  Z)========== is
+  &========== truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+```
+
+Утилита `srtings` извлекает печатаемые символы из файла с данными.
+
+## Level8
+
+The password for the next level is stored in the file `data.txt` and is the only line of text that **occurs only once**.
+
+```
+$ sort data.txt >/tmp/tmp.CxihY3bbdb/sorted.txt
+$ cd /tmp/tmp.CxihY3bbdb
+$ uniq -c sorted.txt |grep -E '1 '
+  1 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+```
+
+или в одно касание
+
+```
+bandit8@bandit:~$ sort data.txt |uniq -c |grep -E '1 '
+  1 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+```
+
+С ключем `-c` утилита `uniq` подсчитывает число идущих подряд повторяющихся строк (почему и нужна **сортировка**). Далее отображаются только уникальные строки с указанинм числа повторов перед каждой строкой через пробел. Т.о. нужная нам строчка будет с символом 1, за кот следует пробел.
+
 ## Level7
 
 The password for the next level is stored in the file `data.txt` next to the word **millionth**.
