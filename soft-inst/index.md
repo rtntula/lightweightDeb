@@ -34,7 +34,7 @@
 ## Утилиты
 
 - Файловый менеджер **Thunar**
-- *Git*
+- *Git* - [Использование в работе](utils/git.md)
 
   > ```
   > $ sudo apt install git
