@@ -34,6 +34,17 @@
 ## Утилиты
 
 - Файловый менеджер **Thunar**
+- *Git*
+
+  > ```
+  > $ sudo apt install git
+  >   installed:
+  >     git-man liberror-perl patch
+  >   Suggested packages:
+  >     git-daemon-run | git-daemon-sysvinit git-doc git-el git-email
+  >     git-gui gitk gitweb git-cvs git-mediawiki git-svn ed diffutils-doc
+  > ```
+
 - [Архивы 7zip -- p7zip](utils/p7zip.md)
 - Keep ip clean: **bleachbit**
 - [Ностальгия по ipconfig и проч. -- Net-tools](utils/net-tools.md)

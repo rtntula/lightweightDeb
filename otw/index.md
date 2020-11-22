@@ -1,8 +1,70 @@
-![](../img/otw01.png)|<span style="color: brown; font-family: Times; font-size: 32px;">OverTheWire Bandit Linux Labs</span>
- --- | --- 
-
+![](../img/otw01.png)
+<span style="color: brown; font-family: Times; font-size: 32px; font-weight: bold;">OverTheWire Bandit Linux Labs</span>
 
 > [`<<`](../index.md)
+
+## Level 13
+
+The password for the next level is stored in `/etc/bandit_pass/bandit14` and can only be read by user **bandit14**. For this level, you don’t get the next password, but you get **a private SSH key** that can be used to log into the next level. Note: `localhost` is a hostname that refers to the machine you are working on
+
+```
+$ ls -lA |grep priv
+  -rw-r----- 1 bandit14 bandit13 1679 May  7  2020 sshkey.private
+$ head -n 2 sshkey.private 
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEpAIBAAKCAQEAxkkOE83W2cOT7IWhFc9aPaaQmQDdgzuXCv+ppZHa++buSkN+
+$ ssh bandit14@localhost -i sshkey.private
+bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
+  4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+bandit14@bandit:~$ ls -lA
+  total 16
+  -rw-r--r-- 1 root root  220 May 15  2017 .bash_logout
+  -rw-r--r-- 1 root root 3526 May 15  2017 .bashrc
+  -rw-r--r-- 1 root root  675 May 15  2017 .profile
+  drwxr-xr-x 2 root root 4096 May  7  2020 .ssh
+```
+
+## Level12
+
+The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed.
+
+```
+$ mv data.txt data.hex
+$ head data.hex
+  00000000: 1f8b 0808 0650 b45e 0203 6461 7461 322e  .....P.^..data2.
+  00000010: 6269 6e00 013d 02c2 fd42 5a68 3931 4159  bin..=...BZh91AY
+$ xxd -r data.hex >data.bin
+$ file data.bin 
+  data.bin: gzip compressed data, was "data2.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
+  ...
+```
+
+```
+$ gzip -lN data.bin
+  compressed        uncompressed  ratio uncompressed_name
+         606                 573  -0.9% data2.bin
+$ gzip -d file.gz
+  ...
+$ bzip2 -dk file.bz2  # just to decompress, -k to save the orig compressed file
+  bzip2: Can't guess original name for data2.bin -- using data2.bin.out
+  ...
+$ tar -tvf data4.bin
+  -rw-r--r-- root/root     10240 2020-05-07 21:14 data5.bin
+$ tar -xf file.tar
+  ...
+```
+
+```
+  ...
+$ cat data9.bin
+  The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+```
+
+data.hex|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;
+---:|---|---|---|---|---|---|---|--- 
+**arch**:|data.bin |data2.bin |data2 |data4.bin |data5.bin |data6.bin |data6 |data8.bin
+**type**:|gzip |bzip2 |gzip |tar |tar |bzip2 |tar |gzip
+**file**:|data2.bin |data2 |data4.bin |data5.bin |data6.bin |data6 |data8.bin |**data9.bin**
 
 ## Level11
 
