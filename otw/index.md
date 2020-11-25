@@ -1,4 +1,5 @@
-![](../img/otw01.png)
+![](../../img/otw01.png)
+
 <span style="color: brown; font-family: Times; font-size: 32px; font-weight: bold;">OverTheWire Bandit Linux Labs</span>
 
 > [`<<`](../index.md)

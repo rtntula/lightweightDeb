@@ -6,6 +6,7 @@
 - [Донастройка системы](aft-inst/index.md)
   > Установка sudo и fluxbox, rsync, mkfs.ext4
 	- [Настройка сетевых интерфейсов](aft-inst/net-if.md)
+	- [Настройка WiFi](aft-inst/wifi.md)
 - [Драйвера](drivers.md)
 - [Оптимизация системы](sys-tune/index.md)
 - [Установка и настройка софта](soft-inst/index.md)
@@ -13,7 +14,7 @@
 
 ## Pending topics
 
-- Настройка wi-fi
+- организация ПОИСКА по данному конспекту
 
 ## Полезности
 
