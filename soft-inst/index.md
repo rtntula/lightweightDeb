@@ -14,7 +14,7 @@
 
   > **Mardown Viewer Webext**
 
-- [Ungoogled-Chromium](chromium.md) - пока не ставил.
+- [Ungoogled-Chromium](chromium.md) -- пока не ставил.
 
 ## Офис
 
@@ -34,7 +34,8 @@
 ## Утилиты
 
 - Файловый менеджер **Thunar**
-- *Git* - [Использование в работе](utils/git.md)
+- **fzf** -- [Нечеткий текстовый поиск](utils/fzf.md)
+- **git** -- [Использование в работе](utils/git.md)
 
   > ```
   > $ sudo apt install git
