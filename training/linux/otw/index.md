@@ -1,4 +1,4 @@
-![](../../img/otw01.png)
+![](img/otw01.PNG)
 
 <span style="color: brown; font-family: Times; font-size: 32px; font-weight: bold;">OverTheWire Bandit Linux Labs</span>
 
@@ -44,7 +44,7 @@ $ file data.bin
 $ gzip -lN data.bin
   compressed        uncompressed  ratio uncompressed_name
          606                 573  -0.9% data2.bin
-$ gzip -d file.gz
+$ gzip -d file.gz  # иногда для обработки файл треб переименования
   ...
 $ bzip2 -dk file.bz2  # just to decompress, -k to save the orig compressed file
   bzip2: Can't guess original name for data2.bin -- using data2.bin.out
