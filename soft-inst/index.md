@@ -46,6 +46,7 @@
   >     git-gui gitk gitweb git-cvs git-mediawiki git-svn ed diffutils-doc
   > ```
 
+- [Screen](utils/screen.md)
 - [Архивы 7zip -- p7zip](utils/p7zip.md)
 - Keep ip clean: **bleachbit**
 - [Ностальгия по ipconfig и проч. -- Net-tools](utils/net-tools.md)
