@@ -29,6 +29,7 @@
 
 - Видео: **Parole Media Player**
 - Музыка в консоли: **cmus**
+- Конвертер видео **[ffmpeg](ffmpeg.md)**
 
 
 ## Утилиты

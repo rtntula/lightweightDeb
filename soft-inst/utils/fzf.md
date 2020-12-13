@@ -13,7 +13,7 @@ $ sudo apt install fzf
 ### Аргументом к cat, vim, etc.
 
 ```
-$ cat "$(fzf)"
+$ vim "$(fzf)"
 ```
 
 ### Поиск в массиве данных

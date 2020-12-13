@@ -1,6 +1,6 @@
 # Screen
 
-> [`<`](../index.md)  
+> [`<<`](../index.md)  
 > [Источник: Linux Leech](www.youtube.com/watch?v=I4xVn6Io5Nw)
 
 The app allows to keep processes running on a remote server even after closing up a ssh connection to it.
