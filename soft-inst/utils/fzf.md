@@ -16,6 +16,8 @@ $ sudo apt install fzf
 $ vim "$(fzf)"
 ```
 
+![](image.png)
+
 ### Поиск в массиве данных
 
 ```

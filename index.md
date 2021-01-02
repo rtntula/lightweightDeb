@@ -4,6 +4,7 @@
 
 - [Установка базовой системы](base-inst/index.md)
 - [Донастройка системы](aft-inst/index.md)
+  > Пробуем [dwm from suckless.org](suckless/index.md)  
   > Установка sudo и fluxbox, rsync, mkfs.ext4
 	- [Настройка сетевых интерфейсов](aft-inst/net-if.md)
 	- [Настройка WiFi](aft-inst/wifi.md)
@@ -19,6 +20,7 @@
 ## Полезности
 
 - [Поиск и замена в файлах](useful/find-replace-in-files.md)
+- [Поиск в файлах](useful/find-in-files.md)
 - [How to Style Images With Markdown](https://www.xaprb.com/blog/how-to-style-images-with-markdown/)
 
 ## [Linux Training](training/linux/index.md)
