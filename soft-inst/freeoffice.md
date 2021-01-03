@@ -8,6 +8,7 @@
 ```
 $ su -
 $ apt update
+$ wget https://www.softmaker.net/down/softmaker-freeoffice-2018_980-01_i386.deb
 $ dpkg -i ./softmaker-freeoffice-2018_980-01_i386.deb
 $ apt install -f
 ```
