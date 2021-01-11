@@ -4,7 +4,7 @@
 
 - [Установка базовой системы](base-inst/index.md)
 - [Донастройка системы](aft-inst/index.md)
-  > Пробуем [dwm from suckless.org](suckless/index.md)  
+- [Оконные менеджеры](wms/index.md)
   > Установка sudo и fluxbox, rsync, mkfs.ext4
 	- [Настройка сетевых интерфейсов](aft-inst/net-if.md)
 	- [Настройка WiFi](aft-inst/wifi.md)
