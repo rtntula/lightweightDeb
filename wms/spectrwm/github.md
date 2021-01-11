@@ -44,8 +44,62 @@ $ sudo mv *.png /usr/share/backgrounds
 $ sudo chmod 755 /usr/share/backgrounds
 $ sudo chown mike /usr/share/backgrounds   
 $ cd /usr/share/backgrounds
-$ 
+$ cp 133.pnd current-wallpaper.png
 ```
 
-`00:18`  
+```
+$ cd
+$ cd dotfiles
+$ mv vimrc ~/.vimrc
+$ mv Xresources ~/.Xresources
+$ cp spectrwm.conf ~/.spectrwm.conf
+$ cat bash-alias.txt >> ~/.bashrc
+
+```
+
+```
+$ cd .src/spectrwm/linux/
+$ make
+$ sudo ln -sf ~/.src/spectrwm/linux/spectrwm /usr/local/bin/
+$ sudo ln -sf ~/.src/spectrwm/linux/libswmhack.so.0.0 /usr/local/lib/
+$ sudo cp spectrwm.desktop /usr/share/xsessions/
+```
+
+```
+$ cd
+$ sudo apt install --no-install-recomends lightdm lightdm-gtk-greeter
+$ sudo systemctl enable lightdm
+$ sudo reboot
+```
+
+```
+cd .src/
+$ git clone https://github.com/linuxdabbler/suckless
+$ cd suckless
+$ mv st/ ../
+$ cd ..
+$ rm -r suckless/
+$ cd st
+$ make
+$ sudo ln -sf ~/.src/st/st /usr/local/bin/
+$ cd
+$ vim .spectrwm.conf
+  program[lock]		= lok
+  bind[lock]		= MOD+Shift+Del
+```
+
+Let's get Ubuntu Nerd Font
+
+- nerdfonts.com
+- dowload -- Ubuntu Nerd Font
+
+```
+$ cd Downloads
+$ unzip Ubuntu.zip
+$ sudo mkdir -p /usr/share/fonts/truetype/nerdfonts/ubuntu
+$ sudo mv *.ttf /usr/share/fonts/truetype/nerdfonts/ubuntu/
+```
+
+Mod+q to refresh and that's it -- we've got spectrwm installed! Yay!
+
 `00:38:37` -- patching
