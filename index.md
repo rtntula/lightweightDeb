@@ -26,5 +26,6 @@
 - [How to Style Images With Markdown](https://www.xaprb.com/blog/how-to-style-images-with-markdown/)
 - [Live News Channels on YouTube](useful/news.md)
 
+## [Конспекты](books/index.md)
 ## [Linux Training](training/linux/index.md)
 --- 
